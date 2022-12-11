@@ -1,0 +1,42 @@
+app:
+  name: radgiri
+  description: 'fleet management'
+theme:
+  light: 'light'
+  dark: 'dark'
+  system: 'system'
+  realtime: 'realtime'
+components:
+  menu: menu
+  language_switcher:
+    change_language: change language
+  theme_switcher:
+    theme: theme
+    change_theme: change theme
+pages:
+  404:
+    title: page not found
+  dashboard:
+    nav: dashboard
+    title: dashboard
+  register:
+    sign_in: Sign In
+    sign_up: Sign Up
+    please_enter_phone_number: Please enter phone number
+    submit: Submit
+    enter_with_password: Enter with password
+  login:
+    sign_in:  Enter with password
+    title:    Please enter username and password 
+    submit:   Submit
+    forget_password:  Forget password
+    enter_and_register_with_phone_number: Sign in / Sing up with phone number 
+  otp: 
+    title: An SMS containing a confirmation code has been sent to you. Please enter the confirmation code sent
+    receive_again_code: Receive again code
+    back_to_sign_in:   Back to sign in
+
+banners:
+  welcome: hello, welcome to %{app_name}!
+others:
+  learn_more: learn more

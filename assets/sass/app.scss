@@ -1,0 +1,156 @@
+// vars
+@import 'variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//fonts
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 10;
+  src: url("@/assets/fonts/dana-fanum-thin.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-thin.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 200;
+  src: url("@/assets/fonts/dana-fanum-extralight.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-extralight.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-extralight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 300;
+  src: url("@/assets/fonts/dana-fanum-light.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-light.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 500;
+  src: url("@/assets/fonts/dana-fanum-medium.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-medium.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 600;
+  src: url("@/assets/fonts/dana-fanum-demibold.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-demibold.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-demibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 750;
+  src: url("@/assets/fonts/dana-fanum-ultrabold.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-ultrabold.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-ultrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 800;
+  src: url("@/assets/fonts/dana-fanum-extrabold.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-extrabold.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-extrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 900;
+  src: url("@/assets/fonts/dana-fanum-black.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-black.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 700;
+  src: url("@/assets/fonts/dana-fanum-bold.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-bold.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'dana';
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/assets/fonts/dana-fanum-regular.eot");
+  src:
+    url("@/assets/fonts/dana-fanum-regular.eot?#iefix")
+    format("embedded-opentype"),
+    url("@/assets/fonts/dana-fanum-regular.woff2") format("woff2");
+}
+
+body,
+html {
+  font-family: $font-family, sans-serif;
+}
+
+// components
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.gray.100');
+  border-left: 1px solid theme('colors.gray.200');
+}
+::-webkit-scrollbar-thumb {
+  border: 4px solid theme('colors.gray.100');
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: theme('colors.slate.300');
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.slate.400');
+}
+html.dark {
+  ::-webkit-scrollbar-track {
+    background: theme('colors.slate.800');
+    border-left: 1px solid theme('colors.slate.700');
+  }
+  ::-webkit-scrollbar-thumb {
+    border-color: theme('colors.slate.800');
+    background-color: theme('colors.slate.500');
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.slate.400');
+  }
+}
+
+// animations
+@import 'animations/transitions';

@@ -1,0 +1,42 @@
+app:
+  name: ردگیری
+  description: 'مدیریت ناوگان'
+theme:
+  light: 'روشن'
+  dark: 'تیره'
+  system: 'سیستم'
+  realtime: 'روزمره'
+components:
+  menu: منو
+  language_switcher:
+    change_language: تغییر زبان
+  theme_switcher:
+    theme: موضوع
+    change_theme: تغییر زمینه
+pages:
+  '404':
+    title: صفحه یافت نشد
+  dashboard:
+    nav: داشبورد
+    title: داشبورد
+  register:
+    sign_in: ورود
+    sign_up: ثبت نام
+    please_enter_phone_number: لطفا شماره تلفن خود را وارد نمایید
+    submit: تایید
+    enter_with_password: ورود با رمز عبور
+  login:
+    sign_in: ورود با رمز عبور
+    title: لطفا نام کاربری و رمز عبور خود را وارد کنید
+    submit: تایید
+    forget_password: فراموشی رمز عبور
+    enter_and_register_with_phone_number: ورود/ ثبت نام با شماره موبایل  
+  otp: 
+    title: پیامک حاوی کد تایید به شماارسال شد لطفا کد تایید ارسال شده را وارد نمایید
+    receive_again_code: دریافت مجدد کد
+    back_to_sign_in: بازگشت به ورود
+
+banners:
+  welcome: سلام، به %{app_name} خوش آمدید!
+others:
+  learn_more: بیشتر بدانید
